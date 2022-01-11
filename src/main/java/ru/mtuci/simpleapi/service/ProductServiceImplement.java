@@ -41,8 +41,10 @@ public class ProductServiceImplement implements ProductService {
     public Product update(Product product, Product updatedProduct) {
         product.setName(updatedProduct.getName());
         product.setBrand(updatedProduct.getBrand());
-        product.setType(updatedProduct.getType());
-        product.setPrice(updatedProduct.getPrice());
+        product.setGrade(updatedProduct.getGrade());
+        product.setSegment(updatedProduct.getSegment());
+        product.setSkuid(updatedProduct.getSkuid());
+
         return productRepository.save(product);
     }
 }

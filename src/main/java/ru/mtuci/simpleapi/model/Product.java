@@ -24,7 +24,11 @@ public class Product extends AbstractBaseEntity {
     @NotBlank
     private String brand;
     @NotBlank
-    private String type;
+    private String grade;
+    @NotBlank
+    private String segment;
+    @NotNull
+    private Integer skuid;
     @NotNull
     private Integer price;
     private Long id;

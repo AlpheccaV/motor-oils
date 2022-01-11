@@ -7,12 +7,12 @@ CREATE TABLE product(
 	id INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
 	name VARCHAR NOT NULL,
 	brand VARCHAR NOT NULL,
-	type VARCHAR NOT NULL,
+	grade VARCHAR NOT NULL,
+	segment VARCHAR NOT NULL,
+	skuid INTEGER NOT NULL,
 	price INTEGER NOT NULL
     );
 
-INSERT INTO public.product(name, brand, type, price) VALUES ('Пена для умывания','Art&Fact', 'Cleansing', 200);
-INSERT INTO public.product(name, brand, type, price) VALUES ('Крем для рук','Laboratorium', 'Moistening', 450);
-INSERT INTO public.product(name, brand, type, price) VALUES ('Тоник','Lush', 'Moistening', 600);
-INSERT INTO public.product(name, brand, type, price) VALUES ('Парфюм','Lush', 'Perfume', 1000);
-INSERT INTO public.product(name, brand, type, price) VALUES ('Маgска для лица','Onme', 'Recovery', 1400);
+INSERT INTO public.product(name, brand, grade, segment, skuid, price) VALUES ('LUKOIL GENESIS ARMORTECH for European Cars 5W-40','LUKOIL', '5W-40', 'PVL', 727271, 2000);
+INSERT INTO public.product(name, brand, grade, segment, skuid, price) VALUES ('Castrol Magnatec 5W-40 А3/В4 DUALOCK','Castrol', '5W-40', 'PVL', 381842, 1980);
+INSERT INTO public.product(name, brand, grade, segment, skuid, price) VALUES ('IDEMITSU Zepro Eco Medalist 0W-20','IDEMITSU', '0W-20', 'PVL', 732613, 4480);
